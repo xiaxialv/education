@@ -14,6 +14,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -42,6 +43,9 @@ public class CallBackTask {
         logger.info("===========开始同步(已支付)========");
         List<AlipayOrderInfoDO> orderPaidWait = alipayOrderInfoDOMapper
                 .selectByOrderStatusAndModifyStatus(OrderConstant.ALIPAY_ORDER_PAYED, OrderConstant.ALIPAY_MODIFY_FAIL);
+        if (orderPaidWait == null) {
+            orderPaidWait = new ArrayList<>();
+        }
         for (AlipayOrderInfoDO alipayOrder : orderPaidWait) {
             String outTradeNo = alipayOrder.getOutTradeNo();
             String tradeNo = alipayOrder.getTradeNo();
@@ -52,7 +56,7 @@ public class CallBackTask {
                     .ecoBillModify(isvId, outTradeNo, tradeNo,AlipayTradeStatusConstant.MODIFY_STATUS_PAYED);
             logger.info("当前同步订单,alipayOrder={}",alipayOrder);
         }
-        logger.info("===========结束同步(已支付)========");
+        logger.info("===========结束同步(已支付) 本次执行了" + orderPaidWait.size() + "条记录========");
     }
 
     //在每天7点到7:59期间的每5分钟触发
