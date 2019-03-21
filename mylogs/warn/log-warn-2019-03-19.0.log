@@ -1,0 +1,22 @@
+2019-03-19 10:14:25.595 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.zaozao.dao.IsvAlipayInfoDOMapper com.zaozao.util.AlipayConfig.isvAlipayInfoDOMapper
+2019-03-19 10:14:46.436 [http-nio-8070-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'school_status' in 'field list'
+### The error may exist in file [/Users/chenxiaotian/myWorkspace/education/target/classes/mapping/SchoolDOMapper.xml]
+### The error may involve com.zaozao.dao.SchoolDOMapper.selectByPrimaryKey-Inline
+### The error occurred while setting parameters
+### SQL: select                            id, school_name, isv_id, school_address, school_contact, school_tel, alipay_account,         alipay_school_pid,school_system,sub_mch_id,alipay_app_auth_token,alipay_app_refresh_token,         alipay_auth_app_id,alipay_school_no,school_type,province_code,province_name,city_code,         city_name,district_code,district_name,school_status               from school         where id = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'school_status' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'school_status' in 'field list']
+2019-03-19 10:30:04.863 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.zaozao.dao.IsvAlipayInfoDOMapper com.zaozao.util.AlipayConfig.isvAlipayInfoDOMapper
+2019-03-19 10:31:37.942 [http-nio-8070-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.alibaba.druid.pool.DataSourceDisableException
+### The error may exist in file [/Users/chenxiaotian/myWorkspace/education/target/classes/mapping/AdminInfoDOMapper.xml]
+### The error may involve com.zaozao.dao.AdminInfoDOMapper.selectByAccountName
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.alibaba.druid.pool.DataSourceDisableException]
+2019-03-19 10:31:44.114 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.zaozao.dao.IsvAlipayInfoDOMapper com.zaozao.util.AlipayConfig.isvAlipayInfoDOMapper
+2019-03-19 10:36:12.997 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.zaozao.dao.IsvAlipayInfoDOMapper com.zaozao.util.AlipayConfig.isvAlipayInfoDOMapper
+2019-03-19 10:48:09.998 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.zaozao.dao.IsvAlipayInfoDOMapper com.zaozao.util.AlipayConfig.isvAlipayInfoDOMapper
+2019-03-19 17:20:40.754 [http-nio-8070-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.zaozao.error.BusinessException]
+2019-03-19 18:01:04.264 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.zaozao.dao.IsvAlipayInfoDOMapper com.zaozao.util.AlipayConfig.isvAlipayInfoDOMapper
+2019-03-19 18:01:49.249 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.zaozao.dao.IsvAlipayInfoDOMapper com.zaozao.util.AlipayConfig.isvAlipayInfoDOMapper

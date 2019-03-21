@@ -1,0 +1,11 @@
+2019-03-11 17:15:20.457 [http-nio-8070-exec-4] DEBUG o.s.b.w.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@35f6d42
+2019-03-11 17:15:20.550 [http-nio-8070-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing GET request for [/school/class/info]
+2019-03-11 17:15:20.582 [http-nio-8070-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /school/class/info
+2019-03-11 17:15:20.610 [http-nio-8070-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public com.zaozao.response.CommonReturnType com.zaozao.controller.SchoolController.getSchoolAndClass() throws java.lang.Exception]
+2019-03-11 17:15:20.617 [http-nio-8070-exec-4] DEBUG o.s.b.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'schoolController'
+2019-03-11 17:15:20.623 [http-nio-8070-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/school/class/info] is: -1
+2019-03-11 17:15:21.053 [http-nio-8070-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Invoking @ExceptionHandler method: public java.lang.Object com.zaozao.controller.BaseController.handlerException(javax.servlet.http.HttpServletRequest,java.lang.Exception)
+2019-03-11 17:15:21.130 [http-nio-8070-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Written [com.zaozao.response.CommonReturnType@2bd90d15] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@17fa1336]
+2019-03-11 17:15:21.137 [http-nio-8070-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2019-03-11 17:15:21.138 [http-nio-8070-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2019-03-11 17:15:21.160 [http-nio-8070-exec-4] DEBUG o.s.b.w.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@35f6d42

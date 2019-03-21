@@ -1,0 +1,35 @@
+2019-02-28 17:40:59.830 [main] DEBUG com.zaozao.App - Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2019-02-28 17:41:55.581 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.SchoolDOMapper.listSchool - ==>  Preparing: select id, school_name, isv_id, school_address, school_contact, school_tel, alipay_account, alipay_id, wechat_account_id,school_system from school order by school_name desc 
+2019-02-28 17:41:55.602 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.SchoolDOMapper.listSchool - ==> Parameters: 
+2019-02-28 17:41:55.632 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.SchoolDOMapper.listSchool - <==      Total: 5
+2019-02-28 17:41:55.649 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.ClassDOMapper.listClassBySchoolId - ==>  Preparing: select id, grade_num, class_num, school_id, head_teacher_name,delete_status from class where school_id = ? and delete_status = ? order by grade_num and class_num 
+2019-02-28 17:41:55.650 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.ClassDOMapper.listClassBySchoolId - ==> Parameters: 2(Integer), 0(String)
+2019-02-28 17:41:55.663 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.ClassDOMapper.listClassBySchoolId - <==      Total: 4
+2019-02-28 17:41:55.668 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.BillItemDOMapper.listItemBySchool - ==>  Preparing: select id, item_name,school_id,delete_status from bill_item where school_id = ? and delete_status = ? order by item_name 
+2019-02-28 17:41:55.668 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.BillItemDOMapper.listItemBySchool - ==> Parameters: 2(Integer), 0(String)
+2019-02-28 17:41:55.670 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.BillItemDOMapper.listItemBySchool - <==      Total: 2
+2019-02-28 17:41:55.671 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.ClassDOMapper.listClassBySchoolId - ==>  Preparing: select id, grade_num, class_num, school_id, head_teacher_name,delete_status from class where school_id = ? and delete_status = ? order by grade_num and class_num 
+2019-02-28 17:41:55.671 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.ClassDOMapper.listClassBySchoolId - ==> Parameters: 1(Integer), 0(String)
+2019-02-28 17:41:55.675 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.ClassDOMapper.listClassBySchoolId - <==      Total: 9
+2019-02-28 17:41:55.677 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.BillItemDOMapper.listItemBySchool - ==>  Preparing: select id, item_name,school_id,delete_status from bill_item where school_id = ? and delete_status = ? order by item_name 
+2019-02-28 17:41:55.677 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.BillItemDOMapper.listItemBySchool - ==> Parameters: 1(Integer), 0(String)
+2019-02-28 17:41:55.679 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.BillItemDOMapper.listItemBySchool - <==      Total: 5
+2019-02-28 17:41:55.679 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.ClassDOMapper.listClassBySchoolId - ==>  Preparing: select id, grade_num, class_num, school_id, head_teacher_name,delete_status from class where school_id = ? and delete_status = ? order by grade_num and class_num 
+2019-02-28 17:41:55.680 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.ClassDOMapper.listClassBySchoolId - ==> Parameters: 5(Integer), 0(String)
+2019-02-28 17:41:55.680 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.ClassDOMapper.listClassBySchoolId - <==      Total: 0
+2019-02-28 17:41:55.681 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.BillItemDOMapper.listItemBySchool - ==>  Preparing: select id, item_name,school_id,delete_status from bill_item where school_id = ? and delete_status = ? order by item_name 
+2019-02-28 17:41:55.681 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.BillItemDOMapper.listItemBySchool - ==> Parameters: 5(Integer), 0(String)
+2019-02-28 17:41:55.682 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.BillItemDOMapper.listItemBySchool - <==      Total: 0
+2019-02-28 17:41:55.683 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.ClassDOMapper.listClassBySchoolId - ==>  Preparing: select id, grade_num, class_num, school_id, head_teacher_name,delete_status from class where school_id = ? and delete_status = ? order by grade_num and class_num 
+2019-02-28 17:41:55.683 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.ClassDOMapper.listClassBySchoolId - ==> Parameters: 6(Integer), 0(String)
+2019-02-28 17:41:55.685 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.ClassDOMapper.listClassBySchoolId - <==      Total: 0
+2019-02-28 17:41:55.685 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.BillItemDOMapper.listItemBySchool - ==>  Preparing: select id, item_name,school_id,delete_status from bill_item where school_id = ? and delete_status = ? order by item_name 
+2019-02-28 17:41:55.685 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.BillItemDOMapper.listItemBySchool - ==> Parameters: 6(Integer), 0(String)
+2019-02-28 17:41:55.686 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.BillItemDOMapper.listItemBySchool - <==      Total: 0
+2019-02-28 17:41:55.686 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.ClassDOMapper.listClassBySchoolId - ==>  Preparing: select id, grade_num, class_num, school_id, head_teacher_name,delete_status from class where school_id = ? and delete_status = ? order by grade_num and class_num 
+2019-02-28 17:41:55.687 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.ClassDOMapper.listClassBySchoolId - ==> Parameters: 7(Integer), 0(String)
+2019-02-28 17:41:55.687 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.ClassDOMapper.listClassBySchoolId - <==      Total: 0
+2019-02-28 17:41:55.688 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.BillItemDOMapper.listItemBySchool - ==>  Preparing: select id, item_name,school_id,delete_status from bill_item where school_id = ? and delete_status = ? order by item_name 
+2019-02-28 17:41:55.688 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.BillItemDOMapper.listItemBySchool - ==> Parameters: 7(Integer), 0(String)
+2019-02-28 17:41:55.689 [http-nio-8070-exec-2] DEBUG com.zaozao.dao.BillItemDOMapper.listItemBySchool - <==      Total: 0
+2019-02-28 17:45:21.398 [main] DEBUG com.zaozao.App - Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE

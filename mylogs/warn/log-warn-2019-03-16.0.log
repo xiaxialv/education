@@ -1,0 +1,2 @@
+2019-03-16 16:01:36.965 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.zaozao.dao.IsvAlipayInfoDOMapper com.zaozao.util.AlipayConfig.isvAlipayInfoDOMapper
+2019-03-16 16:02:33.696 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.zaozao.dao.IsvAlipayInfoDOMapper com.zaozao.util.AlipayConfig.isvAlipayInfoDOMapper

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/zaozao"
+                        userId="root"
+                        password="a123456">
+        </jdbcConnection>
+
+
+        <javaModelGenerator targetPackage="com.zaozao.dataobject" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="mapping" targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.zaozao.dao" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+        <!--<table tableName="student" domainObjectName="StudentDO" enableCountByExample="false"-->
+               <!--enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false"></table>-->
+        <!--<table tableName="school" domainObjectName="SchoolDO" enableCountByExample="false"-->
+               <!--enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false"></table>-->
+        <!--<table tableName="bill" domainObjectName="BillDO" enableCountByExample="false"-->
+               <!--enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false"></table>-->
+        <!--<table tableName="bill_item" domainObjectName="BillItemDO" enableCountByExample="false"-->
+               <!--enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false"></table>-->
+        <!--<table tableName="class" domainObjectName="ClassDO" enableCountByExample="false"-->
+               <!--enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false"></table>-->
+        <!--<table tableName="admin_info" domainObjectName="AdminInfoDO" enableCountByExample="false"-->
+               <!--enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false"></table>-->
+        <!--<table tableName="admin_password" domainObjectName="AdminPasswordDO" enableCountByExample="false"-->
+               <!--enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false"></table>-->
+        <!--<table tableName="admin_role_relation" domainObjectName="AdminRoleRelationDO" enableCountByExample="false"-->
+        <!--enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false"></table>-->
+        <!--<table tableName="isv" domainObjectName="IsvDO" enableCountByExample="false"-->
+               <!--enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false"></table>-->
+        <!--<table tableName="admin_permission" domainObjectName="AdminPermissionDO" enableCountByExample="false"-->
+               <!--enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false"></table>-->
+        <!--<table tableName="order" domainObjectName="WechatOrderInfoDO" enableCountByExample="false"-->
+               <!--enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false"></table>-->
+        <!--<table tableName="isv_wechat_info" domainObjectName="IsvWechatInfoDO" enableCountByExample="false"-->
+               <!--enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false"></table>-->
+        <!--<table tableName="isv_alipay_info" domainObjectName="IsvAlipayInfoDO" enableCountByExample="false"-->
+               <!--enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false"></table>-->
+<!--        <table tableName="alipay_order_info" domainObjectName="AlipayOrderInfoDO" enableCountByExample="false"-->
+<!--               enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"-->
+<!--               selectByExampleQueryId="false"></table>-->
+        <table tableName="" domainObjectName="DO" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false"></table>
+    </context>
+</generatorConfiguration>
